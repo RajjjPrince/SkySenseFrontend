@@ -17,7 +17,7 @@ export interface DemoResponse {
 
 export interface PredictInput {
   year: number;
-  month: number;
+  month: number; 
   day: number;
   hour: number;
   O3_forecast: number;
@@ -54,6 +54,10 @@ export interface Prediction {
   hour: number;
   O3_target: number;
   NO2_target: number;
+  HCHO_target: number;
+  CO_target: number;
+  PM25_target: number;
+  PM10_target: number;
 }
 
 export interface PredictResponse {
