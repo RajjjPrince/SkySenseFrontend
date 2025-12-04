@@ -876,7 +876,7 @@ export default function Dashboard() {
                 {/* Trend Chart O3*/}
                 <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends</h2>
+                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends O3</h2>
                     <div className={`flex gap-2 rounded-lg p-1 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                       {[1, 24, 48].map((hours) => (
                         <button
@@ -918,7 +918,7 @@ export default function Dashboard() {
                  {/* Trend Chart NO2*/}
                 <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends</h2>
+                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends NO2</h2>
                     <div className={`flex gap-2 rounded-lg p-1 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                       {[1, 24, 48].map((hours) => (
                         <button
@@ -958,9 +958,10 @@ export default function Dashboard() {
                   </ResponsiveContainer>
                 </div>
                  {/* Trend Chart HCHO*/}
-                <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
+
+                 <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends</h2>
+                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends HCHO</h2>
                     <div className={`flex gap-2 rounded-lg p-1 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                       {[1, 24, 48].map((hours) => (
                         <button
@@ -995,14 +996,22 @@ export default function Dashboard() {
                         formatter={(value: number) => value.toFixed(1)}
                       />
                       <Legend wrapperStyle={{ paddingTop: '20px' }} />
-                      <Line type="monotone" dataKey="HCHO" stroke="#10b981" strokeWidth={2} dot={false} isAnimationActive={true} strokeDasharray="3 3" name="HCHO (ppb)" />
+                      <Line type="monotone" dataKey="PM25" stroke="#10b981" strokeWidth={2} dot={false} isAnimationActive={true} strokeDasharray="5 5" name="HCHO (µg/m³)" />
+                     
                     </LineChart>
                   </ResponsiveContainer>
                 </div>
+
+
+
+              
+                     
+                
+                
                  {/* Trend Chart CO*/}
                 <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends</h2>
+                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends CO</h2>
                     <div className={`flex gap-2 rounded-lg p-1 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                       {[1, 24, 48].map((hours) => (
                         <button
@@ -1037,14 +1046,22 @@ export default function Dashboard() {
                         formatter={(value: number) => value.toFixed(1)}
                       />
                       <Legend wrapperStyle={{ paddingTop: '20px' }} />
-                      <Line type="monotone" dataKey="CO" stroke="#f59e0b" strokeWidth={2} dot={false} isAnimationActive={true} strokeDasharray="2 2" name="CO (ppm)" />
+                      <Line type="monotone" dataKey="PM25" stroke="#f59e0b" strokeWidth={2} dot={false} isAnimationActive={true} strokeDasharray="5 5" name="CO (µg/m³)" />
+                     
                     </LineChart>
                   </ResponsiveContainer>
                 </div>
+
+
+
+
+
+
+
                  {/* Trend Chart PM10*/}
                 <div className={`rounded-xl border p-6 ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends</h2>
+                    <h2 className={`text-lg font-semibold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Pollution Trends PM10</h2>
                     <div className={`flex gap-2 rounded-lg p-1 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-100'}`}>
                       {[1, 24, 48].map((hours) => (
                         <button
